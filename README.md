@@ -12,7 +12,7 @@ Error Logging Server is a Node.js package designed to capture errors sent from t
 
 Install the package via npm:
 
-
+![image](https://github.com/vaibhav211002/error-logger-server/assets/120389581/6c147d86-8565-44e5-ab3a-4a9733e90fbc)
 
 ## Usage
 

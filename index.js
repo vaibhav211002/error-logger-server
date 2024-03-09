@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-
+const colors = require('colors');
 app.use(cors());
 app.use(express.json());
 
@@ -11,7 +11,7 @@ app.post('/server', (req, res) => {
   if (req.body) {
     frontendError = req.body.error;
     console.log('');
-    console.log('Frontend Error Detected');
+    console.log(colors.green.underline('Frontend Error Detected'));
     console.log(' ');
     console.log(frontendError);
     res.send('Error received and logged');
@@ -20,5 +20,5 @@ app.post('/server', (req, res) => {
     res.send('No error detected');
   }
 });
-
+console.log(colors.green.underline('hii'));
 module.exports = app;
